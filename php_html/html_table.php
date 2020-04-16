@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Populate Table Data</title>
+    <title>Populate Table Data menggunakan PHP</title>
 </head>
 
 <body>
