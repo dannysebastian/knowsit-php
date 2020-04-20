@@ -6,7 +6,7 @@
 </head>
 
 <body>
-    <form action="html_form.php" method="POST">
+    <form action="html_input_type.php" method="POST">
         <table>
             <thead>
                 <th>Input Type</th>
@@ -37,14 +37,15 @@
                     <td>
                         <input type="radio" name="radio" value="A1">A1
                         <input type="radio" name="radio" value="A2">A2
+
                         <input type="radio" name="radio2" value="B1">B1
                         <input type="radio" name="radio2" value="B2">B2
                     </td>
                     <td>
-                    <?php if ($_POST && $_POST['radio']) {
+                    <?php if ($_POST && isset($_POST['radio'])) {
                             echo $_POST['radio'] . '<br>';
                         } ?>
-                        <?php if ($_POST && $_POST['radio2']) {
+                        <?php if ($_POST && isset($_POST['radio2'])) {
                             echo $_POST['radio2'] . '<br>';
                         } ?>
                     </td>
@@ -58,7 +59,7 @@
                         <input type="checkbox" name="checkbox[]" value="D">D
                     </td>
                     <td>
-                        <?php if ($_POST) {
+                        <?php if ($_POST && isset($_POST['checkbox'])) {
                             foreach ($_POST['checkbox'] as $chk)
                                 echo $chk . "<br>";
                         } ?>
@@ -109,7 +110,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>type="time"</td>
+                    <td>type="month"</td>
                     <td>
                         <input type="month" name="month">
                     </td>
@@ -152,7 +153,7 @@
                     </td>
                     <td>
                         <?php if ($_POST) {
-                            echo $_POST['textarea'];
+                            echo $_POST['select'];
                         } ?>
                     </td>
                 </tr>
@@ -174,7 +175,7 @@
                     </td>
                     <td>
                         <?php if ($_POST) {
-                            echo $_POST['reset'];
+                            //echo $_POST['reset'];
                         } ?>
                     </td>
                 </tr>

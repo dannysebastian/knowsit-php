@@ -16,8 +16,8 @@
     ?>
     POST Method: <br>
     <form action="get_post.php" method="POST">
-        <label for="usernamePost">Username :</label><input type="text" name="usernamePost"><br>
-        <label for="passwordPost">Password :</label><input type="password" name="passwordPost"><br>
+        <label for="usernamePost">Username :</label><input type="text" name="usernamePost" value="12345"><br>
+        <label for="passwordPost">Password :</label><input type="password" name="passwordPost" ><br>
         <input type="submit" value="kirim POST">
     </form>
     GET Method: <br>
