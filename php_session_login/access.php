@@ -9,7 +9,6 @@
 </head>
 
 <body>
-    
     <h1>Anda berhasil mengakses halaman spesial ini!</h1>
     
     Silahkan klik <a href="form_login.php">disini</a> untuk kembali ke halaman Form Login.
