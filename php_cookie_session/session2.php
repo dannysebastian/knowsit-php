@@ -8,6 +8,7 @@
 </head>
 <body>
     <?php
+    
         if(isset($_SESSION['name']))
             echo 'Halo '.$_SESSION['name'];
         else
